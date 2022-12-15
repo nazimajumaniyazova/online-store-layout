@@ -1,15 +1,32 @@
-.icon{
-  display: inline-block;
-  mask-position: center;
-  mask-size: cover;
-  mask-repeat: no-repeat;
+.account__icon,
+.basket__icon{
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  background-color: #ffffff;
-  transition: all .3s ease;
-  &:hover{
-    transform: scale(1.1);
-  }
+  border-radius: 66px;
+  background-color:  #E8E8E8;
+  // transition: all .3s ease;
+  // &:hover{
+  //   transform: scale(1.1);
+  // }
+}
+.icon-user,
+.icon-basket{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .icon-user{
-
+  width: 24px;
+  height: 27px;
+  background-image: url("../icons/user.svg");
+}
+.icon-basket{
+  width: 22px;
+  height: 17px;
+  background-image: url("../icons/basket.svg");
 }

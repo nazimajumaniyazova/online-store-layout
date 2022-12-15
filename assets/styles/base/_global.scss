@@ -20,7 +20,8 @@ a{
   color: inherit;
 }
 .container{
-  max-width: 1220px;
+  max-width: $content-width;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }

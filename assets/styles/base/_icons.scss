@@ -1,0 +1,15 @@
+.icon{
+  display: inline-block;
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: all .3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.icon-user{
+
+}

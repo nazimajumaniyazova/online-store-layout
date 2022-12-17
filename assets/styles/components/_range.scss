@@ -1,0 +1,102 @@
+.range {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.range__wrapper {
+	position: relative;
+	min-height: 30px;
+}
+
+.range__control {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	font-size: 24px;
+	color: #635a5a;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	pointer-events: all;
+	width: 13px;
+	height: 13px;
+	// background-color: $range-active;
+	border-radius: 50%;
+	cursor: pointer;
+
+	position: relative;
+}
+
+input[type="range"]::-moz-range-thumb {
+	// -webkit-appearance: none;
+	pointer-events: all;
+	width: 13px;
+	height: 13px;
+	background-color: $range-active;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px #c6c6c6;
+	cursor: pointer;
+}
+
+input[type="number"] {
+	color: #8a8383;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	width: 129px;
+	height: 58px;
+
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 16px;
+	color: $text-dark;
+
+	padding-left: 25px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	opacity: 1;
+}
+
+.range__from,
+.range__to {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 6px;
+	width: 100%;
+	position: absolute;
+	background-color: $bkg-range-inactive;
+	pointer-events: none;
+	border-radius: 6px;
+}
+
+.range__from::-webkit-slider-thumb {
+	background-color: $range-active;
+	position: relative;
+	bottom: -3px;
+}
+
+.range__to::-webkit-slider-thumb {
+	background-color: $range-active;
+	position: relative;
+	bottom: 0px;
+}
+
+#fromSlider {
+	height: 0;
+	z-index: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.range__control-from-input-number {
+	margin-right: 17px;
+}

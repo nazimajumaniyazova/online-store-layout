@@ -1,10 +1,12 @@
-//normalize 
+//normalize
 @import "base/normalize";
 
 // typography
 @import "base/typography";
 
 //abstract
+@import "abstract/constants";
+@import "abstract/mixins";
 @import "abstract/constants";
 @import "abstract/mixins";
 

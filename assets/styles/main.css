@@ -322,8 +322,8 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #737373;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  background-color: #f9f9f9;
 }
 
 ul {
@@ -442,7 +442,7 @@ a {
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
 }
 @media (max-width: 996px) {
   .account {
@@ -485,7 +485,7 @@ a {
   cursor: pointer;
 }
 .navigation__item:hover .navigation__link {
-  color: #252B42;
+  color: #252b42;
   transform: scale(1.1);
 }
 
@@ -497,7 +497,7 @@ a {
   transition: all 0.3s ease;
 }
 .navigation__link_active {
-  color: #252B42;
+  color: #252b42;
 }
 
 .hamburger-lines {
@@ -593,7 +593,7 @@ a {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.1px;
-  color: #252B42;
+  color: #252b42;
 }
 
 .single-product__price {

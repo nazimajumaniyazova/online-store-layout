@@ -1,0 +1,37 @@
+.category {
+	background: $white;
+	border: 1px solid $border;
+	border-radius: 5px;
+	padding: 30px 35px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.category__heading {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: $text-dark;
+	margin-bottom: 12px;
+}
+
+.category__option {
+	display: none;
+}
+
+.category__label {
+	color: $second-text;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 28px;
+	letter-spacing: 0.2px;
+	cursor: pointer;
+	&:hover {
+		color: $link;
+	}
+}
+
+.category__option:checked + .category__label {
+	color: $link;
+}

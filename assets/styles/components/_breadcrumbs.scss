@@ -1,0 +1,17 @@
+.breadcrumbs__center {
+	margin: 0 auto;
+	max-width: 92%;
+	font-size: 14px;
+	line-height: 28px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	padding: 26px 0 24px 0;
+}
+
+.breadcrumbs__item,
+.breadcrumbs__img {
+	margin-right: 13px;
+}

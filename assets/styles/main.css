@@ -342,6 +342,14 @@ a {
   margin: 0 auto;
 }
 
+.btn-reset {
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
 .account__icon,
 .basket__icon {
   width: 56px;
@@ -384,6 +392,7 @@ a {
 .header {
   padding-top: 22px;
   padding-bottom: 22px;
+  background-color: #fff;
 }
 
 .header__wrapper {
@@ -541,4 +550,116 @@ a {
   .hamburger-lines {
     display: flex;
   }
+}
+
+.single-product__data {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.single-product__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-product__img {
+  flex-basis: 60%;
+  align-self: center;
+}
+.single-product__img > img {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.single-product__info {
+  flex-basis: 40%;
+  padding: 10px 20px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.single-product__title,
+.single-product__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+
+.single-product__price {
+  font-size: 20px;
+}
+
+.single-product__desc > p:first-child {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  margin-bottom: 10px;
+}
+.single-product__desc > p:nth-child(2) {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.single-product__table {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+.single-product__table th, .single-product__table td {
+  text-align: start;
+  padding: 10px;
+}
+.single-product__table th {
+  padding-left: 0;
+}
+
+.single-product__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.add-card,
+.buy-now {
+  width: 155px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.add-card {
+  background: #2091F9;
+  color: #fff;
+}
+.add-card:hover {
+  background-color: #0873d7;
+  transform: scale(1.05);
+}
+
+.buy-now {
+  border: 1px solid #2091F9;
+  color: #2091F9;
+}
+.buy-now:hover {
+  background-color: rgb(236, 231, 231);
+  transform: scale(1.05);
+}
+
+.single-product {
+  background-color: #F9F9F9;
+}
+
+.single-product__main {
+  padding: 27px 0;
 }/*# sourceMappingURL=main.css.map */

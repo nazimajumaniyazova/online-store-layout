@@ -8,7 +8,53 @@
 		<title>online-shop</title>
 	</head>
 	<body>
-		<header class="header"></header>
+    <header class="header">
+      <div class="container header__wrapper">
+        <a href="#" class="logo">
+          <img src="assets/images/logo.svg" alt="logo">
+        </a>
+        <!-- Add  header__navigation_active class to nav for mobile-->
+        <nav class="header__navigation">
+          <ul class="navigation">
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link_active" href="#">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Shop</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Account</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Page</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Blog</a>
+              </li>
+          </ul>
+        </nav>
+        <div class="header__left">
+          <div class="account">
+            <span class="account__icon">
+              <span class="icon-user"></span>
+            </span>
+            <span class="">My Account</span>
+          </div>
+          <div class="basket">
+            <span class="basket__icon">
+              <span class="icon-basket"></span>
+            </span>
+            <span class="basket__count">5</span>
+          </div>
+        </div>
+          <!-- Add  hamburger-lines_active class to nav for mobile-->
+        <div class="hamburger hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
+    </header>
 		<main>
 			<section class="breadcrumbs">
 				<div class="breadcrumbs__center">

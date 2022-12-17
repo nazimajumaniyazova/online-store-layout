@@ -40,7 +40,8 @@ input[type="range"]::-moz-range-thumb {
 	cursor: pointer;
 }
 
-input[type="number"] {
+.range__control-from-input-number,
+.range__control-to-input-number {
 	color: #8a8383;
 	border: 1px solid #e0e0e0;
 	border-radius: 5px;
@@ -99,4 +100,16 @@ input::-webkit-inner-spin-button {
 
 .range__control-from-input-number {
 	margin-right: 17px;
+}
+
+@media (max-width: 800px) {
+	.range__control-from-input-number,
+	.range__control-to-input-number {
+		width: 100px;
+		height: 30px;
+	}
+
+	.range__control {
+		justify-content: center;
+	}
 }

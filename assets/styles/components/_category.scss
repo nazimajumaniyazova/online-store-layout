@@ -35,3 +35,13 @@
 .category__option:checked + .category__label {
 	color: $link;
 }
+
+@media (max-width: 800px) {
+	.category {
+		padding: 10px;
+	}
+
+	.category__heading {
+		margin-bottom: 5px;
+	}
+}

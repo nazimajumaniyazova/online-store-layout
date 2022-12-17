@@ -4,3 +4,9 @@
 	height: 243px;
 	background-size: cover;
 }
+
+@media (max-width: 800px) {
+	.promo {
+		height: 285px;
+	}
+}

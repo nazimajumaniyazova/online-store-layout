@@ -69,3 +69,13 @@
 		left: 0;
 	}
 }
+
+@media (max-width: 800px) {
+	.brand {
+		padding: 10px;
+	}
+
+	.brand__heading {
+		margin-bottom: 5px;
+	}
+}

@@ -19,3 +19,9 @@
 		color: $second-text;
 	}
 }
+
+@media (max-width: 800px) {
+	.searchbar {
+		display: none;
+	}
+}

@@ -45,7 +45,7 @@
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0.2px;
-  color: $color-text;
+  color: $text-dark;
   @include media-tablet {
     display: none;
   }
@@ -84,7 +84,7 @@
   padding: 5px;
   cursor: pointer;
   &:hover .navigation__link{
-    color: $color-text;
+    color: $text-dark;
     transform: scale(1.1);
   }
 }
@@ -95,7 +95,7 @@
   letter-spacing: 0.2px;
   transition: all .3s ease;
   &_active{
-    color: $color-text;
+    color: $text-dark;
   }
 }
 

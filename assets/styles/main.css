@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -582,11 +583,22 @@ a {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+    height: 50vh;
+    overflow: auto;
   }
   .filters.active {
     display: block;
     opacity: 1;
     top: -60px;
+  }
+  .filters.active::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #e8e8e8;
+  }
+  .filters.active::-webkit-scrollbar-thumb {
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #2091f9;
   }
 }
 .goods {

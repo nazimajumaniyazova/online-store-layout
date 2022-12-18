@@ -34,82 +34,28 @@
 						<div class="category filters__item">
 							<h2 class="category__heading">Category</h2>
 
-							<input id="all" type="checkbox" class="category__option" />
-							<label for="all" class="category__label">View All</label>
-
-							<input id="decks" type="checkbox" class="category__option" />
-							<label class="category__label" for="decks">Decks</label>
-
-							<input id="wheels" type="checkbox" class="category__option" />
-							<label class="category__label" for="wheels">Wheels</label>
-
-							<input id="trucks" type="checkbox" class="category__option" />
-							<label class="category__label" for="trucks">Trucks</label>
-
-							<input id="helmets" type="checkbox" class="category__option" />
-							<label class="category__label" for="helmets">Helmets</label>
-						</div>
-						<div class="price filters__item">
-							<h2 class="price__heading">Price</h2>
-
-							<div class="range">
-								<div class="range__wrapper">
-									<input
-										class="range__from range__from--price"
-										id="fromSlider"
-										type="range"
-										value="5"
-										min="0"
-										max="30"
-									/>
-									<input
-										class="range__to range__to--price"
-										id="toSlider"
-										type="range"
-										value="20"
-										min="0"
-										max="30"
-									/>
-								</div>
-								<div class="range__control">
-									<input
-										class="range__control-from-input-number"
-										type="number"
-										id="fromInput"
-										value="5"
-										min="0"
-										max="30"
-									/>
-									<input
-										class="range__control-to-input-number"
-										type="number"
-										id="toInput"
-										value="20"
-										min="0"
-										max="30"
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="color filters__item">
-							<h2 class="color__heading">Color</h2>
-
-							<div class="color__wrapper">
-								<input id="black" type="checkbox" class="color__option" />
-								<label for="black" class="color__label">Black</label>
-								<p class="color__amount">666</p>
+							<div class="category__wrapper">
+								<input id="black" type="checkbox" class="category__option" />
+								<label for="black" class="category__label">Decks</label>
+								<p class="category__amount">666</p>
 							</div>
 
-							<div class="color__wrapper">
-								<input id="green" type="checkbox" class="color__option" />
-								<label for="green" class="color__label">Green</label>
-								<p class="color__amount">666</p>
+							<div class="category__wrapper">
+								<input id="green" type="checkbox" class="category__option" />
+								<label for="green" class="category__label">Wheels</label>
+								<p class="category__amount">666</p>
 							</div>
 
-							<div class="color__wrapper">
-								<input id="yellow" type="checkbox" class="color__option" />
-								<label for="yellow" class="color__label">Yellow</label>
-								<p class="color__amount">666</p>
+							<div class="category__wrapper">
+								<input id="yellow" type="checkbox" class="category__option" />
+								<label for="yellow" class="category__label">Trucks</label>
+								<p class="category__amount">666</p>
+							</div>
+
+							<div class="category__wrapper">
+								<input id="yellow" type="checkbox" class="category__option" />
+								<label for="yellow" class="category__label">Helmets</label>
+								<p class="category__amount">666</p>
 							</div>
 						</div>
 						<div class="brand filters__item">
@@ -132,6 +78,92 @@
 								<p class="brand__amount">666</p>
 							</div>
 						</div>
+
+						<div class="price filters__item">
+							<h2 class="price__heading">Price</h2>
+
+							<div class="range">
+								<div class="range__wrapper">
+									<input
+										class="range__input range__from"
+										id="fromSlider"
+										type="range"
+										value="15"
+										min="0"
+										max="100"
+									/>
+									<input
+										class="range__input range__to"
+										id="toSlider"
+										type="range"
+										value="60"
+										min="0"
+										max="100"
+									/>
+								</div>
+								<div class="range__control">
+									<input
+										class="range__control-from"
+										type="number"
+										id="fromInput"
+										value="15"
+										min="0"
+										max="30"
+									/>
+									<input
+										class="range__control-to"
+										type="number"
+										id="toInput"
+										value="60"
+										min="0"
+										max="30"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div class="amount filters__item">
+							<h2 class="amount__heading">Stock</h2>
+
+							<div class="range">
+								<div class="range__wrapper">
+									<input
+										class="range__input range__from--amount"
+										id="fromSlider"
+										type="range"
+										value="4"
+										min="0"
+										max="40"
+									/>
+									<input
+										class="range__input range__to--amount"
+										id="toSlider"
+										type="range"
+										value="20"
+										min="0"
+										max="40"
+									/>
+								</div>
+								<div class="range__control">
+									<input
+										class="range__control-from range__control-from--amount"
+										type="number"
+										id="fromInput"
+										value="4"
+										min="0"
+										max="30"
+									/>
+									<input
+										class="range__control-to range__control-to--amount"
+										type="number"
+										id="toInput"
+										value="20"
+										min="0"
+										max="30"
+									/>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="goods">
 						<div class="goods__top">
@@ -141,10 +173,14 @@
 									<select name="sort" id="sort" class="sort__select">
 										<option value="category">Category</option>
 										<option value="price">Price</option>
-										<option value="color`">Color</option>
+										<option value="color`">Amount</option>
 										<option value="brand">Brand</option>
 									</select>
 								</div>
+							</div>
+							<div class="goods__reset">
+								<button class="goods__reset-btn">Reset Filters</button>
+								<button class="goods__copy-btn">Copy Link</button>
 							</div>
 							<div class="goods__top-right">
 								<button
@@ -265,6 +301,7 @@
 			</ul>
 		</footer>
 		<script src="./js/price.js"></script>
+		<script src="./js/amount.js"></script>
 		<script src="./js/filters.js"></script>
 	</body>
 </html>

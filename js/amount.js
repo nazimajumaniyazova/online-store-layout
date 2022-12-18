@@ -66,7 +66,7 @@ ${sliderColor} 100%)`;
 }
 
 function setToggleAccessible(currentTarget) {
-	const toSlider = document.querySelector(".range__to");
+	const toSlider = document.querySelector(".range__to--amount");
 	if (Number(currentTarget.value) <= 0) {
 		toSlider.style.zIndex = 2;
 	} else {
@@ -74,15 +74,29 @@ function setToggleAccessible(currentTarget) {
 	}
 }
 
-const fromSlider = document.querySelector(".range__from");
-const toSlider = document.querySelector(".range__to");
-const fromInput = document.querySelector(".range__control-from");
-const toInput = document.querySelector(".range__control-to");
-fillSlider(fromSlider, toSlider, "#e6e6e6", "#2dc071", toSlider);
-setToggleAccessible(toSlider);
+const fromSliderAmount = document.querySelector(".range__from--amount");
+const toSliderAmount = document.querySelector(".range__to--amount");
+const fromInputAmount = document.querySelector(".range__control-from--amount");
+const toInputAmount = document.querySelector(".range__control-to--amount");
+fillSlider(
+	fromSliderAmount,
+	toSliderAmount,
+	"#e6e6e6",
+	"#2dc071",
+	toSliderAmount
+);
+setToggleAccessible(toSliderAmount);
 
-fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
-toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
-fromInput.oninput = () =>
-	controlFromInput(fromSlider, fromInput, toInput, toSlider);
-toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+fromSliderAmount.oninput = () =>
+	controlFromSlider(fromSliderAmount, toSliderAmount, fromInputAmount);
+toSliderAmount.oninput = () =>
+	controlToSlider(fromSliderAmount, toSliderAmount, toInputAmount);
+fromInputAmount.oninput = () =>
+	controlFromInput(fromSliderAmount, fromInput, toInputAmount, toSliderAmount);
+toInputAmount.oninput = () =>
+	controlToInput(
+		toSliderAmount,
+		fromInputAmount,
+		toInputAmount,
+		toSliderAmount
+	);

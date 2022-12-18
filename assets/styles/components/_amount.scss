@@ -1,0 +1,27 @@
+.amount {
+	background: $white;
+	border: 1px solid $border;
+	border-radius: 5px;
+	padding: 30px 35px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.amount__heading {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: $text-dark;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+	.amount {
+		padding: 10px;
+	}
+
+	.amount__heading {
+		margin-bottom: 5px;
+	}
+}

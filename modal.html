@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/styles/main.css" />
+		<title>online-shop</title>
+	</head>
+	<body>
+		<div class="modal">
+			<div class="modal__content">
+				<form action="#" method="post">
+					<h2 class="modal__personal-heading">Personal details</h2>
+					<input
+						type="text"
+						class="modal__input"
+						placeholder="Duane Peters"
+						pattern="\w{3,33}\s\w{3,33}"
+					/>
+					<input
+						type="tel"
+						class="modal__input"
+						placeholder="+978 958 20 445 "
+						pattern="[+][0-9]{9,15}"
+					/>
+					<input
+						type="text"
+						class="modal__input"
+						placeholder="Delivery adress"
+						pattern="\w{5,25}\s\w{5,25}\s\w{5,25}"
+					/>
+					<input
+						type="email"
+						class="modal__input"
+						placeholder="E-mail"
+						pattern="[\.a-zA-Z_-]{3,15}@[a-zA-Z]{4,}.[a-zA-z]{2,}"
+					/>
+					<h2 class="modal__card-heading">Credit card details</h2>
+					<div class="buy">
+						<div class="buy__card-back">
+							<div class="buy__card-back-stripe"></div>
+							<p class="buy__card-back-cvv-text">CVC/CVV</p>
+							<input type="number" class="buy__card-cvv" />
+						</div>
+						<div class="buy__card-front">
+							<p class="buy__card-label">Card number</p>
+							<input type="number" class="buy__card-number" />
+							<p class="buy__card-label">Expiration date</p>
+							<div class="buy__card-wrap">
+								<input type="number" class="buy__card-date" />
+							</div>
+							<p class="buy__card-label">Cardholder name</p>
+							<input type="text" class="buy__card-name" />
+						</div>
+					</div>
+					<button class="modal__submit" type="submit">Buy</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

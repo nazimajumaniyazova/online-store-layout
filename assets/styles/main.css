@@ -1430,6 +1430,20 @@ input::-webkit-inner-spin-button {
   padding-top: 20px;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.basket__buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 46px;
+  border: none;
+  color: #ffffff;
+  padding: 16px 26px;
+  height: 40px;
+  background: #2091f9;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {

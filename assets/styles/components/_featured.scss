@@ -1,0 +1,13 @@
+.featured {
+  padding: 90px 0;
+}
+.featured__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featured__title {
+  font-size: 24px;
+  line-height: 36px;
+  color: $text-dark;
+}

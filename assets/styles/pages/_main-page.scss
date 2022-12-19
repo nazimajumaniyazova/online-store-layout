@@ -1,0 +1,11 @@
+.main-page {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $header-height;
+    background-color: transparent;
+    z-index: 10;
+  }
+}

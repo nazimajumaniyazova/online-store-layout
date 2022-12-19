@@ -21,9 +21,15 @@
 					<p class="breadcrumbs__item">Basket</p>
 				</div>
 			</section>
-			<!-- <section class="promo"></section> -->
 			<section class="basket">
 				<div class="basket__center">
+					<div class="basket__pagination">
+						<p class="basket__pagination-text">Items:</p>
+						<input type="text" class="basket__pagination-input" value="5" />
+						<button class="basket__pagination-btn left-btn"></button>
+						<p class="basket__pagination-page">1</p>
+						<button class="basket__pagination-btn right-btn"></button>
+					</div>
 					<div class="basket__head">
 						<div class="basket__head-item">Item</div>
 						<div class="basket__head-price">Price</div>
@@ -43,7 +49,10 @@
 								<p class="basket__description-color">
 									Color: <span class="basket__color">Black</span>
 								</p>
-								<p class="basket__description-price">55</p>
+								<p class="basket__description-price-mobile">55</p>
+								<p class="basket__item-stock">
+									Stock: <span class="basket__item-stock-value">666</span>
+								</p>
 							</div>
 						</div>
 						<div class="basket__price">
@@ -82,6 +91,11 @@
 							<span class="basket__bottom-text">Total:</span>
 							<span class="basket__bottom-value">$155</span>
 						</p>
+						<input
+							type="text"
+							class="basket__promo"
+							placeholder="Promo code..."
+						/>
 						<button class="basket__buy">Buy now</button>
 					</div>
 				</div>

@@ -388,7 +388,6 @@ a {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -448,7 +447,7 @@ a {
 }
 
 .footer__social-link:hover .footer__twitter {
-  fill: #1DA1F2;
+  fill: #1da1f2;
 }
 
 .footer__social-link:hover .footer__facebook {
@@ -459,6 +458,20 @@ a {
   fill: #0e76a8;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 35px 40px 35px 55px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__logo-link {
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 1200px) {
   .footer {
     flex-direction: row;

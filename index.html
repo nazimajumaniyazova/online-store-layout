@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="./node_modules/nouislider/dist/nouislider.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./assets/styles/main.css" />
 		<title>online-shop</title>
 	</head>
@@ -81,8 +85,28 @@
 
 						<div class="price filters__item">
 							<h2 class="price__heading">Price</h2>
-
 							<div class="range">
+								<div class="range__slider"></div>
+								<div class="range__control">
+									<input
+										class="range__control-from"
+										type="number"
+										id="fromInput"
+										value="20"
+										min="0"
+										max="120"
+									/>
+									<input
+										class="range__control-to"
+										type="number"
+										id="toInput"
+										value="80"
+										min="0"
+										max="120"
+									/>
+								</div>
+							</div>
+							<!-- <div class="range">
 								<div class="range__wrapper">
 									<input
 										class="range__input range__from"
@@ -119,14 +143,33 @@
 										max="30"
 									/>
 								</div>
-							</div>
+							</div> -->
 						</div>
 
 						<div class="amount filters__item">
 							<h2 class="amount__heading">Stock</h2>
 
 							<div class="range">
-								<div class="range__wrapper">
+								<div class="range__slider range__slider--amount"></div>
+								<div class="range__control">
+									<input
+										class="range__control-from range__control-from--amount"
+										type="number"
+										id="fromInput"
+										value="20"
+										min="0"
+										max="120"
+									/>
+									<input
+										class="range__control-to range__control-to--amount"
+										type="number"
+										id="toInput"
+										value="80"
+										min="0"
+										max="120"
+									/>
+								</div>
+								<!-- <div class="range__wrapper">
 									<input
 										class="range__input range__from--amount"
 										id="fromSlider"
@@ -161,7 +204,7 @@
 										min="0"
 										max="30"
 									/>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -224,8 +267,8 @@
 				</div>
 			</section>
 		</main>
-		<script src="./js/price.js"></script>
-		<script src="./js/amount.js"></script>
+		<script src="./node_modules/nouislider/dist/nouislider.min.js"></script>
+		<script src="./js/noui.js"></script>
 		<script src="./js/filters.js"></script>
 	</body>
 </html>

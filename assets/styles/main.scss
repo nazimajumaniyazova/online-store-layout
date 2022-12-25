@@ -25,7 +25,6 @@
 @import "components/goods";
 @import "components/searchbar";
 @import "components/category";
-@import "components/color";
 @import "components/brand";
 @import "components/price";
 @import "components/range";
@@ -40,3 +39,7 @@
 @import "pages/single-product";
 @import "pages/not-found.scss";
 @import "pages/main-page.scss";
+@import "components/basket";
+@import "components/modal";
+@import "components/buy";
+@import "components/amount";

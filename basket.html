@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/styles/main.css" />
+		<title>online-shop</title>
+	</head>
+	<body>
+		<header class="header"></header>
+		<main>
+			<section class="breadcrumbs">
+				<div class="breadcrumbs__center">
+					<p class="breadcrumbs__item">Home</p>
+					<img
+						src="./assets/icons/breandcumb-right.svg"
+						alt="breadcrumb arrow"
+						class="breadcrumbs__img"
+					/>
+					<p class="breadcrumbs__item">Basket</p>
+				</div>
+			</section>
+			<section class="basket">
+				<div class="basket__center">
+					<div class="basket__pagination">
+						<p class="basket__pagination-text">Items:</p>
+						<input type="text" class="basket__pagination-input" value="5" />
+						<button class="basket__pagination-btn left-btn"></button>
+						<p class="basket__pagination-page">1</p>
+						<button class="basket__pagination-btn right-btn"></button>
+					</div>
+					<div class="basket__head">
+						<div class="basket__head-item">Item</div>
+						<div class="basket__head-price">Price</div>
+						<div class="basket__head-amount">Amount</div>
+						<div class="basket__head-subtotal">Subtotal</div>
+					</div>
+					<div class="basket__item">
+						<div class="basket__description">
+							<img
+								src="./assets/images/1.jpg"
+								alt="image"
+								class="basket__description-img"
+								width="90"
+							/>
+							<div class="basket__description-info">
+								<p class="basket__description-name">Element Deck</p>
+								<p class="basket__description-color">
+									Color: <span class="basket__color">Black</span>
+								</p>
+								<p class="basket__description-price-mobile">55</p>
+								<p class="basket__item-stock">
+									Stock: <span class="basket__item-stock-value">666</span>
+								</p>
+							</div>
+						</div>
+						<div class="basket__price">
+							$
+							<span class="basket__price-value">55</span>
+						</div>
+						<div class="basket__price-amount">
+							<button
+								class="basket__price-amount-btn basket__price-amount-btn-minus"
+							></button>
+							<span class="basket__price-amount-value">1</span>
+							<button
+								class="basket__price-amount-btn basket__price-amount-btn-plus"
+							></button>
+						</div>
+						<div class="basket__subtotal">
+							$
+							<span class="basket__subtotal-value">55</span>
+						</div>
+						<button class="basket__delete"></button>
+					</div>
+					<div class="basket__controls">
+						<button class="basket__go-shopping-btn">Continue Shopping</button>
+						<button class="basket__clear-btn">Clear Basket</button>
+					</div>
+					<div class="basket__total">
+						<p class="basket__sub">
+							<span class="basket__sub-text">Subtotal:</span>
+							<span class="basket__sub-value">$155</span>
+						</p>
+						<p class="basket__shipping">
+							<span class="basket__shipping-text">Shipping Fee:</span>
+							<span class="basket__shipping-value">$10</span>
+						</p>
+						<p class="basket__bottom">
+							<span class="basket__bottom-text">Total:</span>
+							<span class="basket__bottom-value">$155</span>
+						</p>
+						<input
+							type="text"
+							class="basket__promo"
+							placeholder="Promo code..."
+						/>
+						<button class="basket__buy">Buy now</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

@@ -20,6 +20,34 @@
 
 @media (max-width: 800px) {
 	.filters {
+		width: 75%;
+		opacity: 0;
 		display: none;
+		transition: all ease 0.1s;
+
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+
+		height: 50vh;
+		overflow: auto;
+	}
+
+	.filters.active {
+		display: block;
+		opacity: 1;
+		top: -60px;
+	}
+
+	.filters.active::-webkit-scrollbar {
+		width: 8px; /* ширина для вертикального скролла */
+		height: 8px; /* высота для горизонтального скролла */
+		background-color: $border;
+	}
+
+	.filters.active::-webkit-scrollbar-thumb {
+		border-radius: 9em;
+		box-shadow: inset 1px 1px 10px $link;
 	}
 }

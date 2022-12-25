@@ -18,4 +18,14 @@
 		letter-spacing: 0.1px;
 		color: $second-text;
 	}
+
+	&:focus {
+		outline: 1px solid $link;
+	}
+}
+
+@media (max-width: 800px) {
+	.searchbar {
+		display: none;
+	}
 }

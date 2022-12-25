@@ -9,6 +9,71 @@
 	min-height: 30px;
 }
 
+// Ranges
+
+.range__input {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 6px;
+	width: 100%;
+	position: absolute;
+	background-color: $bkg-range-inactive;
+	pointer-events: none;
+	border-radius: 6px;
+}
+
+.range__from,
+.range__from--amount {
+	height: 0;
+	z-index: 1;
+}
+
+//		Ручки
+
+.range__input {
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		pointer-events: all;
+		width: 13px;
+		height: 13px;
+		background-color: $range-active;
+		border-radius: 50%;
+		cursor: pointer;
+		position: relative;
+	}
+}
+
+.range__input {
+	&::-moz-range-thumb {
+		// -webkit-appearance: none;
+		pointer-events: all;
+		width: 13px;
+		height: 13px;
+		background-color: $range-active;
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px #c6c6c6;
+		cursor: pointer;
+	}
+}
+
+.range__from,
+.range__from--amount {
+	&::-webkit-slider-thumb {
+		position: relative;
+		bottom: -3px;
+	}
+}
+
+.range__to,
+.range__to--amount {
+	&::-webkit-slider-thumb {
+		position: relative;
+		bottom: 0px;
+	}
+}
+
+//		Окошки с цифрами
+
 .range__control {
 	position: relative;
 	display: flex;
@@ -17,30 +82,10 @@
 	color: #635a5a;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	pointer-events: all;
-	width: 13px;
-	height: 13px;
-	// background-color: $range-active;
-	border-radius: 50%;
-	cursor: pointer;
-
-	position: relative;
-}
-
-input[type="range"]::-moz-range-thumb {
-	// -webkit-appearance: none;
-	pointer-events: all;
-	width: 13px;
-	height: 13px;
-	background-color: $range-active;
-	border-radius: 50%;
-	box-shadow: 0 0 0 1px #c6c6c6;
-	cursor: pointer;
-}
-
-input[type="number"] {
+.range__control-from,
+.range__control-from--amount,
+.range__control-to,
+.range__control-to--amount {
 	color: #8a8383;
 	border: 1px solid #e0e0e0;
 	border-radius: 5px;
@@ -52,8 +97,11 @@ input[type="number"] {
 	font-size: 15px;
 	line-height: 16px;
 	color: $text-dark;
+	text-align: center;
 
-	padding-left: 25px;
+	&:focus {
+		outline: 1px solid $link;
+	}
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -61,42 +109,27 @@ input[type="number"]::-webkit-outer-spin-button {
 	opacity: 1;
 }
 
-.range__from,
-.range__to {
-	-webkit-appearance: none;
-	appearance: none;
-	height: 6px;
-	width: 100%;
-	position: absolute;
-	background-color: $bkg-range-inactive;
-	pointer-events: none;
-	border-radius: 6px;
-}
-
-.range__from::-webkit-slider-thumb {
-	background-color: $range-active;
-	position: relative;
-	bottom: -3px;
-}
-
-.range__to::-webkit-slider-thumb {
-	background-color: $range-active;
-	position: relative;
-	bottom: 0px;
-}
-
-#fromSlider {
-	height: 0;
-	z-index: 1;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-	/* display: none; <- Crashes Chrome on hover */
-	-webkit-appearance: none;
+	-webkit-appearance: none; // removes arrows in nums
 	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.range__control-from-input-number {
+.range__control-from,
+.range__control-from--amount {
 	margin-right: 17px;
+}
+
+@media (max-width: 800px) {
+	.range__control-from,
+	.range__control-from--amount,
+	.range__control-to,
+	.range__control-to--amount {
+		width: 100px;
+		height: 30px;
+	}
+
+	.range__control {
+		justify-content: center;
+	}
 }

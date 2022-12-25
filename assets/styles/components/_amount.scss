@@ -1,4 +1,4 @@
-.price {
+.amount {
 	background: $white;
 	border: 1px solid $border;
 	border-radius: 5px;
@@ -8,7 +8,7 @@
 	flex-direction: column;
 }
 
-.price__heading {
+.amount__heading {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
@@ -17,11 +17,11 @@
 }
 
 @media (max-width: 800px) {
-	.price {
+	.amount {
 		padding: 10px;
 	}
 
-	.price__heading {
+	.amount__heading {
 		margin-bottom: 5px;
 	}
 }
